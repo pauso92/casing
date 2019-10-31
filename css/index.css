@@ -48,3 +48,43 @@
 #footer a{
     color: white;
 }
+/* unete */
+.uneteTitle{
+    text-align: center;
+    margin: 20px;
+}
+.uneteParrafo{
+    text-align: center;
+    margin: 40px;
+
+}
+.uneteCards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.unete img{
+    border-radius: 50%;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: justify;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+@media (max-width: 576px){
+    .uneteCards{
+        display: initial;
+    }
+    .card{
+        margin: 20px;
+        justify-self: center;
+    }
+}
+
