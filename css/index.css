@@ -49,6 +49,10 @@
     color: white;
 }
 /* unete */
+.card{
+    display: flex;
+    border: none;
+}
 .uneteTitle{
     text-align: center;
     margin: 20px;
@@ -65,13 +69,24 @@
     margin-bottom: 10px;
 }
 .unete img{
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    align-self: center;
+
 }
 .card-title{
     text-align: center;
+
 }
 .card-text{
     text-align: justify;
+}
+.card-body{
+    display: block;
+}
+.estrellas{
+    text-align: center;
 }
 .boton{
     display: flex;
@@ -80,11 +95,19 @@
 }
 @media (max-width: 576px){
     .uneteCards{
-        display: initial;
+        display: inline-block;
+        align-content: center;
     }
     .card{
         margin: 20px;
-        justify-self: center;
+        position: relative;
+        left: 100px;
+    }
+
+}
+@media (max-width: 360px){
+    .card{
+        position: relative;
+        left: 0;
     }
 }
-
